@@ -1,0 +1,72 @@
+<doctype! html>
+<html>
+
+<head>
+ <title> Analysis Form</title>
+</head>
+
+<body>
+<form action="/external/" method="post">
+    <h1>Fill The Details </h1>
+    {% csrf_token %}
+    firstname <input type="text"><br><br>
+    
+
+    select gender
+    <input type="radio" name="gender">male
+    <input type="radio" name="gender">female
+    <input type="radio" name="gender">transgender
+    <br><br>
+
+
+    radius_mean <input type="number" name="param1"><br><br>
+    texture_mean <input type="number" name="param2"><br><br>
+    perimeter_mean	<input type="number" name="param3"><br>	<br>
+    area_mean <input type="number" name="param4"><br>	<br>
+    smoothness_mean	<input type="number" name="param5"><br>	<br>
+    compactness_mean <input type="number" name="param6"><br>	<br>
+    concavity_mean	<input type="number" name="param7"><br><br>
+    concave points_mean <input type="number" name="param8"><br><br>
+    symmetry_mean	<input type="number" name="param9"><br><br>
+    fractal_dimension_mean	<input type="number" name="param10"><br><br>
+    radius_se <input type="number" name="param11"><br><br>
+    texture_se <input type="number" name="param12"><br><br>
+    perimeter_se <input type="number" name="param13"><br><br>
+    area_se	<input type="number" name="param14"><br>	<br>
+    smoothness_se <input type="number" name="param15"><br><br>
+    compactness_se	<input type="number" name="param16"><br><br>
+    concavity_se	<input type="number" name="param17"><br><br>
+    concave points_se <input type="number" name="param18"><br><br>
+    symmetry_se	<input type="number" name="param19"><br><br>
+    fractal_dimension_se	<input type="number" name="param20"><br><br>
+    radius_worst	<input type="number" name="param21"><br><br>
+    texture_worst	<input type="number" name="param22"><br><br>
+    perimeter_worst	<input type="number" name="param23"><br>	<br>
+    area_worst	<input type="number" name="param24"><br><br>
+    smoothness_worst	<input type="number" name="param25"><br><br>
+    compactness_worst	<input type="number" name="param26"><br><br>
+    concavity_worst	 <input type="number" name="param27"><br><br>
+    concave points_worst	<input type="number" name="param28"><br><br>
+    symmetry_worst	<input type="number" name="param29"><br><br>
+    fractal_dimension_worst <input type="number" name="param30"><br><br>
+    {{data1}}<br><br>
+    <input type="submit" value="SHOW RESULT"><br><br>
+
+
+
+
+</form>
+
+
+<!--<button onclick="location.href='{% url 'script' %}'" type="submit" value="submit">SUBMIT</button> <hr>
+    {% if data %}
+    {{data | safe}}
+    {% endif %}-->
+
+
+
+</body>
+
+
+
+</html>
